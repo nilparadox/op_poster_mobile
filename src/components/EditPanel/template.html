@@ -1,0 +1,71 @@
+<div class="container">
+  <div class="field-container">
+    <div>
+      <h4 class="header">Name</h4>
+      <div class="field-group">
+        <label>Text</label>
+        <input id="nameInput" class="text-input" placeholder="Name" />
+      </div>
+    </div>
+
+    <div>
+      <h4 class="header">Bounty</h4>
+      <div class="field-group">
+        <label>Text</label>
+        <input id="bountyInput" class="text-input" placeholder="Bounty" />
+      </div>
+    </div>
+
+    <div style="display:none;">
+      <range-slider id="nameSpacingSlider" min="0" max="3"></range-slider>
+
+      <range-slider id="bountySpacingSlider" min="0" max="3"></range-slider>
+      <font-select id="bountyFontFamilySelect"></font-select>
+      <range-slider
+        id="bountyFontScaleSlider"
+        min="0.5"
+        max="2"
+        step="0.01"
+      ></range-slider>
+      <range-slider
+        id="bountyFontWeightSlider"
+        min="100"
+        max="900"
+        step="100"
+      ></range-slider>
+      <range-slider
+        id="bountyOffsetSlider"
+        min="-20"
+        max="20"
+        step="0.5"
+      ></range-slider>
+
+      <range-slider id="photoShadowSlider" min="0" max="20"></range-slider>
+      <range-slider id="blurSlider" min="0" max="10"></range-slider>
+      <range-slider id="brightnessSlider" min="0" max="200"></range-slider>
+      <range-slider id="contrastSlider" min="0" max="200"></range-slider>
+      <range-slider id="grayscaleSlider" min="0" max="100"></range-slider>
+      <range-slider id="hueRotateSlider" min="0" max="360"></range-slider>
+      <range-slider id="saturateSlider" min="0" max="200"></range-slider>
+      <range-slider id="sepiaSlider" min="0" max="100"></range-slider>
+      <range-slider id="posterShadowSlider" min="0" max="20"></range-slider>
+    </div>
+  </div>
+
+  <div class="action-container">
+    <button
+      id="closeButton"
+      class="close-button"
+      aria-label="Close edit panel button"
+      title="Close"
+    ></button>
+    <button
+      id="resetButton"
+      class="wood-button"
+      aria-label="Reset button"
+      title="Reset to default settings."
+    >
+      RESET
+    </button>
+  </div>
+</div>

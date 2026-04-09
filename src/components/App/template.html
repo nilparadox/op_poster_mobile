@@ -1,0 +1,65 @@
+<input id="upload-input" type="file" accept="image/*" />
+<slot name="poster"></slot>
+<div class="blood-overlay" hidden></div>
+
+<div class="button-container">
+  <wanted-button
+    id="editButton"
+    aria-label="Edit panel button"
+    title="Open the edit panel."
+  >
+    <iconify-icon slot="icon" icon="fluent-mdl2:edit-photo"></iconify-icon>
+    EDIT
+  </wanted-button>
+
+  <wanted-button
+    id="importButton"
+    aria-label="Import button"
+    title="Import local image to edit."
+  >
+    <iconify-icon slot="icon" icon="uil:image-upload"></iconify-icon>
+    IMPORT
+  </wanted-button>
+
+  <wanted-button
+    id="exportButton"
+    aria-label="Export button"
+    title="Export as image file."
+  >
+    <iconify-icon slot="icon" icon="uil:image-download"></iconify-icon>
+    EXPORT
+  </wanted-button>
+</div>
+
+<button
+  id="criminalButton"
+  class="criminal"
+  aria-label="Criminal mode button"
+  title="Hidden"
+  hidden
+></button>
+
+<button
+  id="tipsButton"
+  class="tips-button"
+  aria-label="Tips button"
+  title="Hidden"
+  hidden
+></button>
+
+<button
+  id="optcButton"
+  class="optc-button"
+  aria-label="Gallery button"
+  title="Hidden"
+  hidden
+></button>
+
+<tips-dialog hidden></tips-dialog>
+
+<slot></slot>
+
+<edit-panel></edit-panel>
+<optc-gallery-panel hidden></optc-gallery-panel>
+
+<div class="loading-overlay" hidden></div>
