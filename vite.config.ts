@@ -14,7 +14,7 @@ export default defineConfig({
       strategies: 'injectManifest',
       srcDir: 'src/service-worker',
       filename: 'sw.ts',
-      base: '/op_poster/',
+      base: '/op_poster_mobile/',
       injectRegister: 'auto',
 
       injectManifest: {
@@ -133,7 +133,7 @@ export default defineConfig({
       }
     })
   ],
-  base: '/op_poster/',
+  base: '/op_poster_mobile/',
   server: {
     host: true
   },
